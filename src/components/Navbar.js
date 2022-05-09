@@ -6,7 +6,7 @@ export class Navbar extends Component {
                 <nav className="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
                     <div className="container">
                         <a className="navbar-brand" href="./">
-                        <img height="50" src="https://telegra.ph/file/dff924bcc1144977cb0b5.png"/>
+                        <img height="50" src="https://telegra.ph/file/dff924bcc1144977cb0b5.png" alt='logo'/>
                             <strong>Induced Official</strong>
                         </a>
                         <button
@@ -23,27 +23,27 @@ export class Navbar extends Component {
                         <div className="navbar-collapse collapse" id="navbarColor02" >
                             <ul className="navbar-nav mr-auto d-flex align-items-center">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="./">
+                                    <a className="nav-link" href="./languages">
                                         Languages<span className="sr-only"></span>
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="./article">
-                                        Compilers
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="./article">
+                                    <a className="nav-link" href="./projects">
                                         Projects
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="./article">
+                                    <a className="nav-link" href="./compiler">
+                                        Compilers
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="./apis">
                                         Apis
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="./article">
+                                    <a className="nav-link" href="./posts">
                                         Posts / News
                                     </a>
                                 </li>
@@ -54,7 +54,7 @@ export class Navbar extends Component {
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="./docs">
-                                        InducedOfficial <span className="badge badge-secondary">docs</span>
+                                        Induced <span className="badge badge-secondary">docs</span>
                                     </a>
                                 </li>
                             </ul>

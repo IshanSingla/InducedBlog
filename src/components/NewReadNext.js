@@ -20,7 +20,7 @@ export default class NewReadNext extends Component {
                             </div>
                             <small className="text-muted">Dec 12 &middot; 5 min read</small>
                         </div>
-                        <img height="120" src="https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg"/>
+                        <img height="120" src="https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg" alt='blog image for display'/>
                     </div>
                     <div className="mb-3 d-flex justify-content-between">
                         <div className="pr-3">

@@ -12,6 +12,40 @@
   box-sizing: border-box;
 }
 
+.control-panel {
+  background: lightgray;
+  text-align: right;
+  padding: 3px;
+  font-family: sans-serif;
+}
+
+.languages {
+  background: white;
+  border: 2px solid gray;
+}
+
+#editor { height: 400px; }
+
+.button-container {
+  text-align: right;
+  padding: 4px;
+}
+
+.btn {
+  background: #57a958;
+  color: white;
+  padding: 8px;
+  border: 0;
+}
+
+.output {
+      padding: 4px;
+      border: 2px solid gray;
+      min-height: 100px;
+      width: 99%;
+      resize: none;
+
+}
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -13512,5 +13546,3 @@ ul.ascii
   > li:last-child::before {
   content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
 }
-
-/*# sourceMappingURL=main.css.map */
