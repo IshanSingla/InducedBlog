@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class ReadNext extends Component {
   render() {
     return (
-        <div className="container pt-4 pb-4">
+    <div className="container pt-4 pb-4">
         <h5 className="font-weight-bold spanborder"><span>Read next</span></h5>
         <div className="row">
             <div className="col-lg-6">
@@ -17,7 +17,7 @@ export default class ReadNext extends Component {
                             Researchers have found an effective target in the brain for electrical stimulation to improve mood in people suffering from depression.
                         </p>
                         <div>
-                            <small className="d-block"><a className="text-muted" href="./author">Favid Rick</a></small>
+                            <small className="d-block"><a className="text-muted" href="/author">Favid Rick</a></small>
                             <small className="text-muted">Dec 12 · 5 min read</small>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ export default class ReadNext extends Component {
                         <img height="80" src="https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg"/>
                         <div className="pl-3">
                             <h2 className="mb-2 h6 font-weight-bold">
-                            <a className="text-dark" href="./article">Nasa's IceSat space laser makes height maps of Earth</a>
+                            <a className="text-dark" href="/article">Nasa's IceSat space laser makes height maps of Earth</a>
                             </h2>
                             <div className="card-text text-muted small">
                                 Jake Bittle in LOVE/HATE
@@ -41,7 +41,7 @@ export default class ReadNext extends Component {
                         <img height="80" src="https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg"/>
                         <div className="pl-3">
                             <h2 className="mb-2 h6 font-weight-bold">
-                            <a className="text-dark" href="./article">Underwater museum brings hope to Lake Titicaca</a>
+                            <a className="text-dark" href="/article">Underwater museum brings hope to Lake Titicaca</a>
                             </h2>
                             <div className="card-text text-muted small">
                                 Jake Bittle in LOVE/HATE
@@ -53,7 +53,7 @@ export default class ReadNext extends Component {
                         <img height="80" src="https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg"/>
                         <div className="pl-3">
                             <h2 className="mb-2 h6 font-weight-bold">
-                            <a className="text-dark" href="./article">Sun-skimming probe starts calling home</a>
+                            <a className="text-dark" href="/article">Sun-skimming probe starts calling home</a>
                             </h2>
                             <div className="card-text text-muted small">
                                 Jake Bittle in LOVE/HATE

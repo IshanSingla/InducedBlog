@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class Navbar extends Component {
-    render() {
+
+const Navbar = () =>{
         return (
                 <nav className="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
                     <div className="container">
-                        <a className="navbar-brand" href="./">
+                        <a className="navbar-brand" href="/">
                         <img height="50" src="https://telegra.ph/file/dff924bcc1144977cb0b5.png" alt='logo'/>
                             <strong>Induced Official</strong>
                         </a>
@@ -23,46 +23,46 @@ export class Navbar extends Component {
                         <div className="navbar-collapse collapse" id="navbarColor02" >
                             <ul className="navbar-nav mr-auto d-flex align-items-center">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="./languages">
+                                    <a className="nav-link" href="/languages">
                                         Languages<span className="sr-only"></span>
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="./projects">
+                                    <a className="nav-link" href="/projects">
                                         Projects
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="./compiler">
+                                    <a className="nav-link" href="/compiler">
                                         Compilers
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="./apis">
+                                    <a className="nav-link" href="/apis">
                                         Apis
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="./posts">
+                                    <a className="nav-link" href="/posts">
                                         Posts / News
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="./about">
+                                    <a className="nav-link" href="/about">
                                         About
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="./docs">
+                                    <a className="nav-link" href="/docs">
                                         Induced <span className="badge badge-secondary">docs</span>
                                     </a>
                                 </li>
+                                
                             </ul>
                         </div>
                     </div>
                 </nav>
         );
     }
-}
 
 export default Navbar;
