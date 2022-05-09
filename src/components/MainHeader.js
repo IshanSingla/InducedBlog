@@ -14,7 +14,7 @@ export default class MainHeader extends Component {
                         </p>
                         <a href="/article" className="btn btn-dark">Read More</a>
                     </div>
-                    <div className="col-md-6 d-none d-md-block pr-0"><img src="https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg" className="shadow"/></div>
+                    <div className="col-md-6 d-none d-md-block pr-0"><img src="https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg" height={"100%"} className="shadow"/></div>
                 </div>
             </div>
         </div>
