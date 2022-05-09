@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, useParams, Route, Routes } from "react-router-dom";
 
 import "./App.css"
 import Navbar from './components/Navbar'
@@ -13,6 +13,10 @@ import Compiler from './components/Compiler';
 import Api from './components/Api';
 
 export class App extends Component {
+  componentDidMount() {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+}
+
   render() {
     return (
 
@@ -24,7 +28,7 @@ export class App extends Component {
             <Route exact path="/" element={<><MainHeader/><NewReadNext/></>} />
             <Route exact path="/posts" element={<><br/><NewReadNext/></>} />
             <Route exact path="/apis" element={<><br/><Api/></>} />
-            <Route exact path="/article" element={<><Header/><Posts/><ReadNext/></>} />
+            <Route exact path="/article/:topicId" element={<><Posts/><ReadNext/></>} />
             <Route exact path="/compiler" element={<Compiler/>} />
           </Routes>
         </Router>
