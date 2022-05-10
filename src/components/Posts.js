@@ -91,6 +91,7 @@ export default function Posts(){
 export class Colector extends Component {
     render() {
       return (
+        <div className="container">
         <div className="border p-5 bg-lightblue">
           <div className="row justify-content-between">
             <div className="col-md-5 mb-2 mb-md-0">
@@ -114,6 +115,7 @@ export class Colector extends Component {
               </div>
             </div>
           </div>
+        </div>
         </div>
       );
     }
