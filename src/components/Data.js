@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-export default class NewReadNext extends Component {
-  render() {
-    let is= {
+export default function Data() {
+    return {
         posts: [
             {
-            postlisk: "ishanisgreat",
+            postlisk: "ishanisfgreat",
             auther: "Ishan Singla ",
             title: "1Run Python Code on Websites: Exploring Brython",
             image: "https://miro.medium.com/max/1400/0*WPX-e528msQc9qdI",
@@ -128,82 +127,4 @@ export default class NewReadNext extends Component {
             
         ]
     };
-    this.data=is.posts
-    this.data=this.data.reverse()
-
-
-
-    let art=[]
-    this.data.forEach((datas) => {
-        art.push(
-        <div className="border-top mb-3 d-flex justify-content-between">
-            <div className="pr-3">
-                <h2 className="mb-1 h4 font-weight-bold">
-                <a className="text-dark" href={"/article/"+datas.postlisk}>{datas.title}</a>
-                </h2>
-                <p>{datas.describe}</p>
-                <div className="card-text text-muted small">{datas.auther}</div>
-                <small className="text-muted">{datas.posttime}</small>
-            </div>
-            <img height="120" src={datas.image} alt='blog image for display'/>
-        </div>);
-      }
-    );
-
-
-
-
-    let polular=[]
-    while (( this.data.length>0)){
-        let is=this.data[0];
-        let ish=[]
-        this.data.forEach((item, index,datas) => {
-            if (index!=0){
-                if (item.postviews>is.postviews)
-                {
-                    
-                    ish.push(is);
-                    is=item
-                }
-                else{
-                        ish.push(item);
-                    
-                }
-            }
-        }
-        );
-        polular.push(
-        <li className='border-top'><span>
-            <h6 className="font-weight-bold">
-                <a href={"/article/"+is.postlisk} className="text-dark">{is.title}</a>
-            </h6>
-            <p className="text-muted">{is.describe}</p>
-        </span></li>)
-        if (ish.length!=0)
-        {
-            this.data=ish;
-        }
-        else{
-            break;
-        }
-    }
-
-    return (
-          <div className="container">
-            <div className="row justify-content-between">
-                <div className="col-md-8">
-                    <h5 className="font-weight-bold spanborder"><span>All Stories</span></h5>
-                    {art}
-                </div>
-                <div className="col-md-4 pl-4">
-                    <h5 className="font-weight-bold spanborder"><span>Popular</span></h5>
-                    <ol className="list-featured">
-                        {polular}
-                    </ol>
-                </div>
-            </div>
-        </div>
-
-    )
   }
-}
