@@ -42,7 +42,7 @@ export class MainHeader extends Component {
                           <p className="mb-3">
                           Here we're introducing you what you can do with Coading Knowledge. Mostly works on Python. Projects Which made are basically Bots like: GitHub Bot, Telegram Bots, WebScraping, etc
                           </p>
-                          <a href="/article" className="btn btn-dark">Read More</a>
+                          <a href="/article/InducedOfficial" className="btn btn-dark">Read More</a>
                       </div>
                       <div className="col-md-6 d-none d-md-block pr-0"><img src="https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg" height={"100%"} className="shadow"/></div>
                   </div>
