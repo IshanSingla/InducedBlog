@@ -59,7 +59,6 @@ export default function Navbar() {
         </div>
       
         <div className="dropdown">
-          <span className="badge  badge-info">Ishan Singla</span>
           <img className="rounded-circle shadow" src="https://avatars.githubusercontent.com/u/79676239?s=400&u=50ed13d45e13500fd65b3b84b4f64276d6313ea8&v=4" width="50"/>
           <div className="dropdown-content">
             <a className="dropdown-item" href="/Profile">Profile</a>
