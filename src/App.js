@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import "./App.css"
+
 import Navbar from './components/Navbar'
 import Footer from './components/footer'
 import Posts, {Colector} from './components/Posts'
-import Header, {MainHeader} from './components/Header';
+import {MainHeader} from './components/Header';
 import {ReadNext, NewReadNext} from './components/ReadNext'
 import Compiler from './components/Compiler';
 import Api from './components/Api';
@@ -25,6 +25,17 @@ export class App extends Component {
             <Route exact path="/compiler/:id" element={<Compiler/>} />
           </Routes>
         </Router>
+        <div className="showish" >
+           {/* eslint-disable-next-line */}
+          <img className="rounded-circle" src='https://www.kindpng.com/picc/m/466-4662212_phone-headset-icon-support-png-phone-transparent-png.png' width={"70"}/>
+          <div className="chat-popup">
+          <form action="/" className="form-container">
+            <h2>Support Chat</h2>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+            <button type="submit" className="btn">Send</button>
+          </form>
+        </div>
+        </div>
         <Footer/>
       </>     
     )

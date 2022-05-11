@@ -6,6 +6,39 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+ .form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+ .form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.showish {
+  display: block;
+  position: fixed;
+  bottom: 5px;
+  right: 15px;
+  z-index: 1;
+}
+
+ .chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.showish:hover .chat-popup {
+  display: block;
+}
  .dropdown-content {
   display: none;
   position: absolute;
