@@ -7325,6 +7325,7 @@ button.bg-orange:focus {
 
 .bg-lightblue {
   background-color: #e8f3ec !important;
+  height: 500px;
 }
 
 a.bg-lightblue:hover,
