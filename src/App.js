@@ -19,10 +19,10 @@ export class App extends Component {
         <Router>
           <Routes>
             <Route exact path="/" element={<><MainHeader/><NewReadNext/><Colector key={"nfjnfdjndkkmn nimci "}/></>} />
-            <Route exact path="/posts" element={<><br/><NewReadNext/></>} />
+            <Route exact path="/posts/:id" element={<><br/><NewReadNext/></>} />
             <Route exact path="/apis" element={<><br/><Api/></>} />
             <Route exact path="/article/:id" element={<><Posts/><ReadNext/></>} />
-            <Route exact path="/compiler" element={<Compiler/>} />
+            <Route exact path="/compiler/:id" element={<Compiler/>} />
           </Routes>
         </Router>
         <Footer/>

@@ -2,7 +2,6 @@ import React from "react";
 export default function Navbar() {
   return (
     <nav className="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
-      <div className="container">
         <a className="navbar-brand" href="/">
           <img height="50" src="https://telegra.ph/file/dff924bcc1144977cb0b5.png"/>
           <strong>Induced Official</strong>
@@ -27,13 +26,28 @@ export default function Navbar() {
               <a className="nav-link" href="/projects">Projects</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/compiler"> Compilers</a>
+              <div className="dropdown">
+                <a className="nav-link dropbtn">Compilers</a>
+                <div className="dropdown-content">
+                  <a className="dropdown-item" href="/compiler/Python">Python</a>
+                  <a className="dropdown-item" href="/compiler/C">C</a>
+                  <a className="dropdown-item" href="/compiler/Cpp">C++</a>
+                  <a className="dropdown-item" href="/compiler/Php">Php</a>
+                  <a className="dropdown-item" href="/compiler/Dart">Dart</a>
+                </div>
+              </div>
+            </li>
+            <li className="nav-item">
+              <div className="dropdown">
+                <a className="nav-link dropbtn">Posts / News</a>
+                <div className="dropdown-content">
+                  <a className="dropdown-item" href="/posts/tech">Tech</a>
+                  <a className="dropdown-item" href="/posts/cars">Cars</a>
+                </div>
+              </div>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/apis"> Apis </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/posts">Posts / News</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/about"> About  </a>
@@ -43,7 +57,16 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-      </div>
+      
+        <div className="dropdown">
+          <span className="badge  badge-info">Ishan Singla</span>
+          <img className="rounded-circle shadow" src="https://avatars.githubusercontent.com/u/79676239?s=400&u=50ed13d45e13500fd65b3b84b4f64276d6313ea8&v=4" width="50"/>
+          <div className="dropdown-content">
+            <a className="dropdown-item" href="/Profile">Profile</a>
+            <a className="dropdown-item" href="/Logout">Logout</a>
+          </div>
+        </div>
+    
     </nav>
   );
 };
