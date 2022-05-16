@@ -9,6 +9,7 @@ import {MainHeader} from './components/Header';
 import {ReadNext, NewReadNext} from './components/ReadNext'
 import Compiler from './components/Compiler';
 import Api from './components/Api';
+import Faqs from './components/Faqs';
 
 
 export class App extends Component {
@@ -21,6 +22,7 @@ export class App extends Component {
             <Route exact path="/" element={<><MainHeader/><NewReadNext/><Colector key={"nfjnfdjndkkmn nimci "}/></>} />
             <Route exact path="/posts/:id" element={<><br/><NewReadNext/></>} />
             <Route exact path="/apis" element={<><br/><Api/></>} />
+            <Route exact path="/about" element={<><br/><Faqs/></>} />
             <Route exact path="/article/:id" element={<><Posts/><ReadNext/></>} />
             <Route exact path="/compiler/:id" element={<Compiler/>} />
           </Routes>
