@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css"
 
 import Navbar from './components/Navbar'
-import Footer from './components/footer'
+import Footer, {Footer1} from './components/footer'
 import Posts, {Colector} from './components/Posts'
 import {MainHeader} from './components/Header';
 import {ReadNext, NewReadNext} from './components/ReadNext'
@@ -36,7 +36,7 @@ export class App extends Component {
           </form>
         </div>
         </div>
-        <Footer/>
+        <Footer1/>
       </>     
     )
   }
